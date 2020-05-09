@@ -1,0 +1,2 @@
+mogrify -path photos/thumbs -thumbnail 150x150 photos/*.jpg
+exiftool -r -csv photos/ >_data/picsinfo.csv

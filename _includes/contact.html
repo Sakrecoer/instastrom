@@ -1,0 +1,40 @@
+<!-- Contact -->
+<section id="contact" class="wrapper style1 align-center">
+  <div class="inner medium">
+    <h2>Send me a message</h2>
+    <form action="{{ site.baseurl }}/contact-success/" method="post">
+      <input type="hidden" name="_to" value="set+web@hallstrom.ch" /><br />
+      <input type="text" name="_gotcha" style="display: none;" />
+      <div class="fields">
+        <div class="field half">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Your name" />
+        </div>
+        <div class="field half">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Your email is required" required />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="6" placeholder="Write a poem"></textarea>
+        </div>
+      </div>
+      <div style="text-align: left;">
+        <input type="checkbox" name="consent" id="consent" required />
+        <label for="consent">I agree to the privacy terms
+        </label>
+        <br /><br />
+
+        <input type="checkbox" name="newsletter" id="newsletter" />
+        <label for="newsletter">Send me News
+        </label>
+      </div>
+<br />
+      <ul class="actions special">
+        <li><input type="submit" name="submit" id="submit" value="Submit" /></li>
+      </ul>
+    </form>
+
+  </div>
+</section>
+<!-- END Contact -->

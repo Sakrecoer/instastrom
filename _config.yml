@@ -1,0 +1,72 @@
+# ----
+# Site
+
+title: Setstagram
+url: "https://insta.hallstrom.ch"
+google_analytics_key: 
+# google_maps_javascript_api_key:
+# disqus_shortname:
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: >-
+  My own insta, beause i can, becasue why not and because who wants the insta app on their phone?
+author:
+  name: Sethy Bwoy
+  email: set+web@hallstrom.ch
+  twitter: heptazoid
+social:
+  name: Sethyboy
+  links:
+    - https://twitter.com/heptazoid
+    - https://www.instagram.com/sethybwoy
+
+# -----
+# Build
+
+timezone: "Europe/Stockholm"
+
+# permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-last-modified-at
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+collections:
+  images:
+    output: false
+    permalink: /:path
+
+sass:
+  sass_dir: _sass
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      _options:
+        image:
+          width: 1024
+          height: 720
+          resize_style: cover
+          uploads_dir: "/photos"
+
+# -----------
+# Feed
+name: Setsagram
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
+
+# ---------
+# Translate
+lang: en
